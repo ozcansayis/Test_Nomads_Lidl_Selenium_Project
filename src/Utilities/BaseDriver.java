@@ -20,7 +20,7 @@ public class BaseDriver {
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        new WebDriverWait(driver,Duration.ofSeconds(15));
+        wait = new WebDriverWait(driver,Duration.ofSeconds(15));
     }
 
     public static void waitAndQuit() {
