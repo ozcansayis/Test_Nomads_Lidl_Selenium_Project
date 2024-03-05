@@ -2,6 +2,7 @@ package Utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.logging.Level;
@@ -9,6 +10,7 @@ import java.util.logging.Logger;
 
 public class BaseDriver {
     public static WebDriver driver;
+    public static WebDriverWait wait;
 
     static {
         Logger logger = Logger.getLogger("");
@@ -18,6 +20,7 @@ public class BaseDriver {
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        new WebDriverWait(driver,Duration.ofSeconds(15));
     }
 
     public static void waitAndQuit() {
