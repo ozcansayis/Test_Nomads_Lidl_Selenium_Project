@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0be6a3-c37e-4fe9-b073-e2bcaba3280e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lidl Selenium Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/US_101.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/US_102.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/US_103.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/US_104.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/US_105.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/US_106.java" afterDir="false" />
+    <list default="true" id="9d0be6a3-c37e-4fe9-b073-e2bcaba3280e" name="Changes" comment="Ensuring the helper texts work on point.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/seleniumhq_selenium_java.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lidl Selenium Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lidl Selenium Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/US_102.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/US_102.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilities/BaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/BaseDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,14 +24,39 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;samfrmda01&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="ozcansayis" />
+        <option name="repository" value="Test_Nomads_Lidl_Selenium_Project" />
+      </RepoCoordinatesHolder>
+    </option>
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9e38f6be-5df7-48e9-8a89-14701cc95ce0" />
+        <option name="url" value="https://github.com/ozcansayis/Test_Nomads_Lidl_Selenium_Project" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2dHiMOlwkyrW9JppFqGfGUYQl4b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,18 +66,80 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.US_101.executor": "Run",
+    "JUnit.US_102.TC_102.executor": "Run",
+    "JUnit.US_102.executor": "Run",
+    "JUnit.ikinciYol.c.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "samed",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.16699219",
+    "project.structure.side.proportion": "0.21724138"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.US_102.TC_102">
+    <configuration name="US_101" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lidl Selenium Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="US_101" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_102" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lidl Selenium Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="US_102" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_102.TC_102" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lidl Selenium Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="US_102" />
+      <option name="METHOD_NAME" value="TC_102" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ikinciYol.c" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lidl Selenium Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ikinciYol" />
+      <option name="METHOD_NAME" value="c" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.US_102.TC_102" />
+        <item itemvalue="JUnit.ikinciYol.c" />
+        <item itemvalue="JUnit.US_102" />
+        <item itemvalue="JUnit.US_101" />
+        <item itemvalue="JUnit.US_101" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-8336523bb0d9-05f2e5ef" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,6 +149,39 @@
       <option name="presentableId" value="Default" />
       <updated>1709671357405</updated>
     </task>
+    <task id="LOCAL-00001" summary="checking matching urls.">
+      <option name="closed" value="true" />
+      <created>1709673664806</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709673664806</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ensuring the helper texts work on point.">
+      <option name="closed" value="true" />
+      <created>1709725824436</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709725824436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="checking matching urls." />
+    <MESSAGE value="Ensuring the helper texts work on point." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ensuring the helper texts work on point." />
   </component>
 </project>

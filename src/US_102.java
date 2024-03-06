@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
@@ -23,41 +24,35 @@ public class US_102 extends BaseDriver {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[aria-label='okay']"))).click();
 
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='accept cookies']")))).click();
+
+
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.cssSelector("[data-test='signIn']")))).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a[data-test='joinButton']"))).click();
 
         Assert.assertTrue("hatali site", driver.getCurrentUrl().equals("https://www.lidl.com/register"));
 
-        //enter name
+
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[id='input2']"))).sendKeys("sam");
-        //enter lastName
         driver.findElement(By.cssSelector("input[id='input3']")).sendKeys("yeks");
-        //enter email
         driver.findElement(By.cssSelector("input[id='input4']")).sendKeys("samfromda01@hotmail.com");
-        //re-enter email
         driver.findElement(By.cssSelector("input[id='input5']")).sendKeys("samfromda01@hotmail.com");
-        //enter password
         driver.findElement(By.cssSelector("input[id='input6']")).sendKeys("testNomads01.");
-        //enter number
         driver.findElement(By.cssSelector("input[id='input7']")).sendKeys("4213213243");
-        //enter zip-code
         driver.findElement(By.cssSelector("input[id='input8']")).sendKeys("01113");
-        //enter birthdate
         driver.findElement(By.cssSelector("input[id='date-picker-dialog']")).sendKeys("05072001");
-        //enter address
+
         driver.findElement(By.cssSelector("input[id='input9']")).sendKeys("usa cali");
-        //enter city
         driver.findElement(By.cssSelector("input[id='input10']")).sendKeys("orange county");
-        //enter state utilizing select class
         WebElement element = driver.findElement(By.cssSelector("select[id='select0']"));
         Select select = new Select(element);
         select.selectByVisibleText("California");
-       //hit the checkbox
+
         driver.findElement(By.cssSelector("label[class='newsletter labeled-checkbox']")).click();
-        //hit 'join myLidl' button
+
         driver.findElement(By.cssSelector("div[class='spinnie-container']")).click();
-        //hit the dropdown section to access sign out button
+
         driver.findElement(By.cssSelector("li[class='sign-in-container']")).click();
        //sign out not to stay logged in for re-registration with the same credentials
         driver.findElement(By.cssSelector("li[tabindex='-1']")).click();
@@ -72,7 +67,7 @@ public class US_102 extends BaseDriver {
 
         MyMethods.myWait(2);
 
-        //set and iterator to reach the window that we need to run test on.
+
         Set<String> x = driver.getWindowHandles();
 
         Iterator iterator = x.iterator();
