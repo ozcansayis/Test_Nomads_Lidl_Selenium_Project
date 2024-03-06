@@ -9,7 +9,7 @@ public class US_101 extends BaseDriver {
         driver.get("https://www.lidl.com/");
 
         MyMethods.myWait(1);
-        Assert.assertTrue("hatasdda", driver.getCurrentUrl().equals("https://www.lidl.com/"));
+        Assert.assertTrue("hata", driver.getCurrentUrl().equals("https://www.lidl.com/"));
         waitAndQuit();
     }
 

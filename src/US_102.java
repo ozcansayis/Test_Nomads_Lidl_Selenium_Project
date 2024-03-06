@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public class US_102 extends BaseDriver {
@@ -17,17 +18,21 @@ public class US_102 extends BaseDriver {
     public void TC_102() throws AWTException {
         Robot robot = new Robot();
         driver.get("https://www.lidl.com/");
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[aria-label='okay']"))).click();
-        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='accept cookies']")))).click();
+        List<WebElement> joinButton= driver.findElements(By.cssSelector("button[aria-label='okay']"));
+        if (!joinButton.isEmpty())
+            joinButton.get(0).click();
+        List<WebElement> cookies = driver.findElements(By.xpath("//button[text()='accept cookies']"));
+        if (!cookies.isEmpty())
+            wait.until(ExpectedConditions.elementToBeClickable(cookies.get(0))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.cssSelector("[data-test='signIn']")))).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a[data-test='joinButton']"))).click();
         Assert.assertEquals("hatali site", "https://www.lidl.com/register", driver.getCurrentUrl());
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[id='input2']"))).sendKeys("sam");
-        driver.findElement(By.cssSelector("input[id='input3']")).sendKeys("yeks");
-        driver.findElement(By.cssSelector("input[id='input4']")).sendKeys("samfromda01@hotmail.com");
-        driver.findElement(By.cssSelector("input[id='input5']")).sendKeys("samfromda01@hotmail.com");
-        driver.findElement(By.cssSelector("input[id='input6']")).sendKeys("testNomads01.");
-        driver.findElement(By.cssSelector("input[id='input7']")).sendKeys("4213213243");
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[id='input2']"))).sendKeys("Test");
+        driver.findElement(By.cssSelector("input[id='input3']")).sendKeys("Nomads");
+        driver.findElement(By.cssSelector("input[id='input4']")).sendKeys("testnomads01@gmail.com");
+        driver.findElement(By.cssSelector("input[id='input5']")).sendKeys("testnomads01@gmail.com");
+        driver.findElement(By.cssSelector("input[id='input6']")).sendKeys("Nomad07++");
+        driver.findElement(By.cssSelector("input[id='input7']")).sendKeys("4213213240");
         driver.findElement(By.cssSelector("input[id='input8']")).sendKeys("01113");
         driver.findElement(By.cssSelector("input[id='date-picker-dialog']")).sendKeys("05072001");
         driver.findElement(By.cssSelector("input[id='input9']")).sendKeys("usa cali");
