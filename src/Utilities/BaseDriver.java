@@ -2,7 +2,6 @@ package Utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -12,29 +11,16 @@ import java.util.logging.Logger;
 public class BaseDriver {
     public static WebDriver driver;
     public static WebDriverWait wait;
-    public static ChromeOptions cO;
 
     static {
-        cO = new ChromeOptions();
-
-        cO.addArguments("--disable-extensions");
-        cO.addArguments("--disable-infobars");
-        cO.addArguments("--disable-popup-blocking");
-        cO.addArguments("--disable-password-manager-reauthentication");
-        cO.addArguments("--disable-save-password-bubble");
-        cO.addArguments("--password-store=basic");
-        cO.addArguments("--disable-geolocation");
-        cO.addArguments("--disable-autofill");
-
         Logger logger = Logger.getLogger("");
         logger.setLevel(Level.SEVERE);
-        driver = new ChromeDriver(cO);
-
+        driver = new ChromeDriver();
 //      driver=new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(driver,Duration.ofSeconds(15));
     }
 
     public static void waitAndQuit() {
